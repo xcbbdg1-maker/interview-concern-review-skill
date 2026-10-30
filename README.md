@@ -1,39 +1,61 @@
 # interview-concern-review
 
-一个面向面试复盘的 skill，帮助根据录音转写稿识别面试官的顾虑、犹豫点与隐性拒绝信号，并给出：
+A practical interview review skill for analyzing interview transcripts, identifying hidden concerns from interviewers, and converting those insights into actionable improvement plans.
 
-- 关键顾虑的证据
-- 严重程度判断
-- 根因分析
-- 可执行改进动作
-- 改写后的回答示例
-- 下次面试前的准备清单
+This skill is designed for cases where the user has a recording transcript or interview notes and wants to understand:
 
-## 适用场景
+- where the interviewer was not convinced
+- why the hesitation existed
+- which concerns were explicit vs implicit
+- what to improve before the next round
+- how to rewrite the answer in a clearer, more persuasive form
 
-- 用户提供面试录音文字稿
-- 需要复盘某场面试是否被说服
-- 想找出面试官真实顾虑，而不是只看“有没有收到 offer”
-- 需要针对性更新回答和准备材料
+## What it does
 
-## 内容说明
+The skill helps review a full interview process and produce a structured output including:
 
-主文件：
+- interviewer concern signals and hesitation points
+- evidence with transcript quotes and timestamps
+- severity ranking of each concern
+- root-cause analysis
+- concrete improvement actions
+- rewritten answers for interview practice
+- follow-up question simulation
+- action checklist for the next round
+
+## Main file
 
 - [skill.md](skill.md)
 
-该 skill 会引导分析过程，包括：
+## Typical use cases
 
-1. 识别面试结构与考察点
-2. 提取明确/隐含顾虑信号
-3. 分析顾虑来源（专业、表达、动机、可信度等）
-4. 按严重程度排序
-5. 给出可练习的改写回答
-6. 提供反问点评和行动清单
+- Interview transcript review after a failed or uncertain round
+- Post-interview reflection on what the interviewer actually doubted
+- Preparation before a second-round interview
+- Identifying repeated weak points across multiple interview sessions
+- Improving answer structure, clarity, and confidence under pressure
 
-## 使用方式
+## Workflow
 
-将仓库中的 skill 内容按你当前的 AI/agent 配置加载即可，之后在需要复盘某场面试时直接使用。 
+The skill follows a structured workflow:
+
+1. Preprocess the transcript and correct obvious recognition errors
+2. Map the interview structure by stage and question type
+3. Detect explicit and implicit concern signals
+4. Classify concerns by dimension such as capability, credibility, motivation, or culture-fit
+5. Assess each concern by severity and confidence
+6. Suggest targeted improvement actions and rewritten answers
+7. Evaluate candidate questions and propose stronger alternatives
+
+## Example output includes
+
+- one-sentence conclusion
+- concern summary table sorted by severity
+- detailed breakdown for each major issue
+- reflection on candidate questions
+- strengths to keep
+- next-step preparation checklist
+- mock follow-up questions for practice
 
 ## License
 
